@@ -19,8 +19,7 @@ public class UsernameListTest {
         String str = "ojy";
         Username user = new Username(str);
         Username user1 = new Username(str);
-        IllegalArgumentException e = assertThrows(IllegalArgumentException.class,()->new UsernameList(Arrays.asList(user.getName(),user1.getName())));
-        String message = e.getMessage();
-        assertEquals("There should not be a duplicate name.",message);
+        IllegalArgumentException e = assertThrows(IllegalArgumentException.class,()->new UsernameList(Arrays.asList(user,user1)));
+        assertEquals("There should not be a duplicate name.",e.getMessage());
     }
 }

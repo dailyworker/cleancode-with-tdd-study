@@ -27,7 +27,7 @@ public class UsernameTest {
     @DisplayName("If there is a comma in the name")
     void namesplit(){
         String str1 = "hey,ho,hi";
-        List<String> list = Username.namesplit(str1);
+        List<String> list = Username.nameSplit(str1);
         List<String> list1= Arrays.asList("hey","ho","hi");
         assertEquals(list,list1);
 
@@ -38,8 +38,7 @@ public class UsernameTest {
     @DisplayName("If the name is more than 5 characters long")
     void nameCountExceed(String name){
         IllegalArgumentException e =assertThrows(IllegalArgumentException.class,()->new Username(name));
-        String message = e.getMessage();
-        assertEquals("You have exceeded the number of characters in your name.",message);
+        assertEquals("You have exceeded the number of characters in your name.",e.getMessage());
     }
 
     @ParameterizedTest(name = "{index} {displayName} message = {0}")
@@ -47,16 +46,14 @@ public class UsernameTest {
     @DisplayName("If there is a space in it")
     void spaceforname(String name){
         IllegalArgumentException e = assertThrows(IllegalArgumentException.class,()->new Username(name));
-        String message = e.getMessage();
-        assertEquals("The name must not contain spaces.",message);
+        assertEquals("The name must not contain spaces.",e.getMessage());
     }
 
     @Test
     @DisplayName("If name is null value")
     void nullname(){
-        NullPointerException e = assertThrows(NullPointerException.class,()->new Username(""));
-        String message = e.getMessage();
-        assertEquals("You cannot enter a null value in the name.",message);
+        NullPointerException e = assertThrows(NullPointerException.class,()->new Username(null));
+        assertEquals("You cannot enter a null value in the name.",e.getMessage());
     }
 
 }

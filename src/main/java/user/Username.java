@@ -6,23 +6,24 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Username {
-    public String getName() {
-        return name;
-    }
+
 
     private final String name;
+
     public Username(String name) {
         validate(name);
         this.name = name;
     }
-
+    public String getName() {
+        return name;
+    }
     private void validate(String name){
-        validatenullpoint(name);
+        validateNullPoint(name);
         validateOverLength(name);
-        validatespace(name);
+        validateSpace(name);
     }
 
-    public static List<String> namesplit(String name){
+    public static List<String> nameSplit(String name){
         List<String> list = new ArrayList<>();
         String[] commasplit = name.split(",");
         for(int i=0;i<commasplit.length;i++)
@@ -35,13 +36,13 @@ public class Username {
             throw new IllegalArgumentException("You have exceeded the number of characters in your name.");
     }
 
-    private void validatespace(String name){
+    private void validateSpace(String name){
         if(spaceCheck(name))
             throw new IllegalArgumentException("The name must not contain spaces.");
     }
 
-    private void validatenullpoint(String name) {
-        if (name.isEmpty()) {
+    private void validateNullPoint(String name) {
+        if (name==null) {
             throw new NullPointerException("You cannot enter a null value in the name.");
         }
     }

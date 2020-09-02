@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="user.UsernameListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-01T15:50:28" hostname="DESKTOP-SUUPRUU" time="0.034">
+<testsuite name="user.UsernameListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-02T15:48:25" hostname="DESKTOP-SUUPRUU" time="0.046">
   <properties/>
-  <testcase name="duplicatename()" classname="user.UsernameListTest" time="0.034"/>
-  <system-out><![CDATA[1
-2
-]]></system-out>
+  <testcase name="duplicatename()" classname="user.UsernameListTest" time="0.046"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
