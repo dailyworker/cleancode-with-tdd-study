@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="user.UsernameListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-01T15:50:28" hostname="DESKTOP-SUUPRUU" time="0.034">
+  <properties/>
+  <testcase name="duplicatename()" classname="user.UsernameListTest" time="0.034"/>
+  <system-out><![CDATA[1
+2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
