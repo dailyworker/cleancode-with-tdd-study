@@ -1,0 +1,2 @@
+domain/nameTest.java
+ domain.nameTest
