@@ -1,2 +1,4 @@
 domain/nameTest.java
  domain.nameTest
+domain/PlayTest.java
+ domain.PlayTest
