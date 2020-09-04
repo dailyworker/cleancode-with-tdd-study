@@ -1,3 +1,5 @@
+play/PlayTest.java
+ play.PlayTest
 user/UsernameTest.java
  user.UsernameTest
 user/UsernameListTest.java
