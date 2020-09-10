@@ -1,8 +1,0 @@
-play/Play.java
- play.Play
-App.java
- App
-user/Username.java
- user.Username
-user/UsernameList.java
- user.UsernameList
