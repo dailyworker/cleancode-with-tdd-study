@@ -1,5 +1,8 @@
+import Controller.CarController;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Run");
+        CarController controller = new CarController();
+        controller.start();
     }
 }
